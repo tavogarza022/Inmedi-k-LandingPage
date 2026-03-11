@@ -2,12 +2,12 @@
    Variables de Marca (Inmedi-k)
    ========================================================================== */
 :root {
-  --primary-color: #00B5AD;      /* Cian Médico */
-  --secondary-color: #023859;    /* Azul Marino */
-  --accent-color: #f8f9fa;       /* Gris Claro */
+  --primary-color: #8125d0;      /* Morado Medio */
+  --secondary-color: #4c157a;    /* Morado Oscuro */
+  --accent-color: #f2f2f2;       /* Gris Claro */
   
   --text-dark: #333333;
-  --text-muted: #6c757d;
+  --text-muted: #8b8b8b;         /* Gris Medio */
 }
 
 /* ==========================================================================
@@ -51,10 +51,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary-custom:hover, 
 .btn-primary-custom:focus {
-  background-color: #00968f; /* Un poco mas oscuro para el hover */
-  border-color: #00968f;
+  background-color: #6b1db3; /* Morado medio oscurecido para hover */
+  border-color: #6b1db3;
   color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 181, 173, 0.3);
+  box-shadow: 0 4px 6px rgba(129, 37, 208, 0.3);
 }
 
 .btn-secondary-custom {
@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-secondary-custom:hover, 
 .btn-secondary-custom:focus {
-  background-color: #01243a;
-  border-color: #01243a;
+  background-color: #3a0f5e;
+  border-color: #3a0f5e;
   color: #fff;
 }
 
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-overlay {
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
-  background-color: rgba(2, 56, 89, 0.85); /* Overlay oscuro sobre imagen de clínica */
+  background-color: rgba(76, 21, 122, 0.85); /* Overlay morado oscuro sobre imagen */
   z-index: 1;
 }
 
@@ -123,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
   transform-style: preserve-3d;
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner,
+.flip-card.flipped .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -137,27 +138,27 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
 }
 
-/* Cara Frontal: Placeholder gris + título */
+/* Cara Frontal: Morado medio + ícono + título */
 .flip-card-front {
-  background-color: #d0d4d8;
+  background-color: #8125d0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(76, 21, 122, 0.15);
 }
 
 .flip-card-front .card-icon {
   font-size: 3rem;
-  color: var(--secondary-color);
-  opacity: 0.5;
+  color: #f2f2f2;
+  opacity: 0.7;
   margin-bottom: auto;
   margin-top: auto;
 }
 
 .flip-card-front .card-label {
-  background-color: var(--secondary-color);
+  background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
   width: 100%;
   padding: 1rem 0.75rem;
@@ -199,27 +200,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
 }
 
-/* Soporte táctil: en mobile las tarjetas se revelan con tap */
-@media (hover: none) {
+/* Ajustes responsivos para evitar que las tarjetas se deformen en pantallas pequeñas */
+@media (max-width: 768px) {
   .flip-card {
-    height: auto;
-  }
-  .flip-card-inner {
-    transform: none !important;
-    transform-style: flat;
-  }
-  .flip-card-front,
-  .flip-card-back {
-    position: relative;
-    backface-visibility: visible;
-    transform: none !important;
-  }
-  .flip-card-front {
-    height: 180px;
-    border-radius: 12px 12px 0 0;
-  }
-  .flip-card-back {
-    border-radius: 0 0 12px 12px;
-    border-top: none;
+    height: 350px; /* Un poco más alta en mobile para listas largas */
   }
 }

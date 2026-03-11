@@ -97,4 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 4. Lógica para manejar el volteo de tarjetas en Dispositivos Móviles (Touch)
+    const flipCards = document.querySelectorAll('.flip-card');
+    flipCards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Alternar la clase 'flipped' para activar el CSS de rotación
+            this.classList.toggle('flipped');
+        });
+    });
 });
