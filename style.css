@@ -1,0 +1,225 @@
+/* ==========================================================================
+   Variables de Marca (Inmedi-k)
+   ========================================================================== */
+:root {
+  --primary-color: #00B5AD;      /* Cian Médico */
+  --secondary-color: #023859;    /* Azul Marino */
+  --accent-color: #f8f9fa;       /* Gris Claro */
+  
+  --text-dark: #333333;
+  --text-muted: #6c757d;
+}
+
+/* ==========================================================================
+   Estilos Generales
+   ========================================================================== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+/* Tipografía de utilidad (Grosor variable según brief) */
+.fw-semibold { font-weight: 600 !important; }
+
+/* ==========================================================================
+   Utilidades de Color
+   ========================================================================== */
+.text-primary-custom { color: var(--primary-color) !important; }
+.text-secondary-custom { color: var(--secondary-color) !important; }
+.bg-primary-custom { background-color: var(--primary-color) !important; color: #fff; }
+.bg-secondary-custom { background-color: var(--secondary-color) !important; color: #fff; }
+.bg-accent-custom { background-color: var(--accent-color) !important; }
+
+/* ==========================================================================
+   Botones Personalizados (Bordes Completamente Redondeados .rounded-pill)
+   ========================================================================== */
+.btn-primary-custom {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover, 
+.btn-primary-custom:focus {
+  background-color: #00968f; /* Un poco mas oscuro para el hover */
+  border-color: #00968f;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 181, 173, 0.3);
+}
+
+.btn-secondary-custom {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary-custom:hover, 
+.btn-secondary-custom:focus {
+  background-color: #01243a;
+  border-color: #01243a;
+  color: #fff;
+}
+
+/* ==========================================================================
+   Componentes Específicos
+   ========================================================================== */
+/* Navbar */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+.navbar-brand {
+  letter-spacing: -0.5px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 85vh; /* Amplio espacio blanco general / clínico */
+  display: flex;
+  align-items: center;
+  /* El background URL se ajusta por HTML o en una clase específica posterior */
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background-color: rgba(2, 56, 89, 0.85); /* Overlay oscuro sobre imagen de clínica */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* ==========================================================================
+   Tarjetas Interactivas Flip-Card (Hover para revelar servicios)
+   ========================================================================== */
+.flip-card {
+  perspective: 1000px;
+  height: 320px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Cara Frontal: Placeholder gris + título */
+.flip-card-front {
+  background-color: #d0d4d8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.flip-card-front .card-icon {
+  font-size: 3rem;
+  color: var(--secondary-color);
+  opacity: 0.5;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+.flip-card-front .card-label {
+  background-color: var(--secondary-color);
+  color: #fff;
+  width: 100%;
+  padding: 1rem 0.75rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.3px;
+}
+
+/* Cara Trasera: Lista de servicios */
+.flip-card-back {
+  background-color: #ffffff;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  border: 2px solid var(--primary-color);
+}
+
+.flip-card-back h4 {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.flip-card-back ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.flip-card-back ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--text-dark);
+}
+
+/* Soporte táctil: en mobile las tarjetas se revelan con tap */
+@media (hover: none) {
+  .flip-card {
+    height: auto;
+  }
+  .flip-card-inner {
+    transform: none !important;
+    transform-style: flat;
+  }
+  .flip-card-front,
+  .flip-card-back {
+    position: relative;
+    backface-visibility: visible;
+    transform: none !important;
+  }
+  .flip-card-front {
+    height: 180px;
+    border-radius: 12px 12px 0 0;
+  }
+  .flip-card-back {
+    border-radius: 0 0 12px 12px;
+    border-top: none;
+  }
+}
