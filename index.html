@@ -38,7 +38,7 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm py-3">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm py-3">
         <div class="container">
             <!-- Brand / Logo as Text (Placeholder until Image Logo) -->
             <a class="navbar-brand" href="#">
@@ -54,10 +54,21 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
+                        <a class="nav-link text-secondary-custom fw-semibold px-3" href="#beneficios">¿Por qué nosotros?</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-secondary-custom fw-semibold px-3" href="#servicios">Estudios</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary-custom fw-semibold px-3" href="#sucursales">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-secondary-custom fw-semibold px-3" href="#formulario">Contacto</a>
+                    </li>
                     <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-primary-custom rounded-pill px-4" href="#formulario">Agendar cita</a>
+                        <a class="btn btn-whatsapp rounded-pill px-4" href="https://wa.me/" target="_blank">
+                            <i class="bi bi-whatsapp"></i> Cotiza por Whatsapp
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -174,10 +185,48 @@
             }
             /* El botón original permanece oculto */
         }
-
     </style>
+    <section id="beneficios" class="py-5 bg-white">
+        <div class="container py-md-5">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">¿Por qué miles de familias confían en nosotros?</h2>
+                <div class="mx-auto mt-3"
+                    style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
+            </div>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 shadow-sm h-100 bg-accent-custom border-bottom border-primary-custom border-4">
+                        <i class="bi bi-speedometer2 display-4 text-primary-custom mb-3"></i>
+                        <h3 class="h5 fw-bold">Resultados en 24h</h3>
+                        <p class="small text-muted mb-0">Sabemos que tu salud no puede esperar. Entrega rápida y precisa.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 shadow-sm h-100 bg-accent-custom border-bottom border-primary-custom border-4">
+                        <i class="bi bi-layers display-4 text-primary-custom mb-3"></i>
+                        <h3 class="h5 fw-bold">Tecnología Avanzada</h3>
+                        <p class="small text-muted mb-0">Equipos de última generación para la máxima confianza en cada estudio.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 shadow-sm h-100 bg-accent-custom border-bottom border-primary-custom border-4">
+                        <i class="bi bi-people-fill display-4 text-primary-custom mb-3"></i>
+                        <h3 class="h5 fw-bold">Atención Profesional</h3>
+                        <p class="small text-muted mb-0">Personal altamente capacitado y amable para tu total tranquilidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="p-4 rounded-4 shadow-sm h-100 bg-accent-custom border-bottom border-primary-custom border-4">
+                        <i class="bi bi-cash-coin display-4 text-primary-custom mb-3"></i>
+                        <h3 class="h5 fw-bold">Precios Accesibles</h3>
+                        <p class="small text-muted mb-0">La mejor calidad clínica al alcance de tu economía familiar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Sección Servicios -->
+    <!-- Sección Estudios (Anteriormente Servicios) -->
     <section id="servicios" class="py-5 bg-accent-custom">
         <div class="container py-md-5">
             <div class="text-center mb-5">
@@ -186,15 +235,12 @@
                     style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
             </div>
 
-            <!-- Grilla 3 Columnas Bootstrap - Flip Cards -->
             <div class="row g-4">
-
                 <!-- 1. General -->
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/General.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/General.webp') top/cover no-repeat;">
                                 <i class="bi bi-clipboard2-pulse card-icon"></i>
                                 <div class="card-label">General</div>
                             </div>
@@ -203,14 +249,10 @@
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Glucosa</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Colesterol</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría
-                                        Hemática</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general
-                                        de orina</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta de
-                                        revisión</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría Hemática</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general de orina</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta de revisión</li>
                                 </ul>
                             </div>
                         </div>
@@ -221,20 +263,17 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Adulto.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Adulto.webp') top/cover no-repeat;">
                                 <i class="bi bi-person-fill card-icon"></i>
                                 <div class="card-label">Adulto</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Adulto</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general
-                                        (Glucosa, colesterol, triglicéridos, biometría, EGO)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general (Glucosa, colesterol, triglicéridos, biometría, EGO)</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Creatinina</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Urea</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta general
-                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta general</li>
                                 </ul>
                             </div>
                         </div>
@@ -245,8 +284,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Cardio.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Cardio.webp') top/cover no-repeat;">
                                 <i class="bi bi-heart-pulse card-icon"></i>
                                 <div class="card-label">Cardiaco</div>
                             </div>
@@ -254,15 +292,10 @@
                                 <h4>Cardiaco</h4>
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Colesterol</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Rayos X de tórax
-                                    </li>
-                                    <li><i
-                                            class="bi bi-check-circle-fill text-primary-custom me-2"></i>Electrocardiograma
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Medicina interna
-                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Rayos X de tórax</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Electrocardiograma</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Medicina interna</li>
                                 </ul>
                             </div>
                         </div>
@@ -273,21 +306,17 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Embarazo.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Embarazo.webp') top/cover no-repeat;">
                                 <i class="bi bi-boxes card-icon"></i>
                                 <div class="card-label">Embarazo</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Embarazo</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal
-                                        (biometría, examen general de orina, glucosa, VDRL grupo y RH)</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Química
-                                        Sanguínea</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Química Sanguínea</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>VIH</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta
-                                        ginecológica</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta ginecológica</li>
                                 </ul>
                             </div>
                         </div>
@@ -298,8 +327,7 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/pediatria.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/pediatria.webp') top/cover no-repeat;">
                                 <i class="bi bi-emoji-smile card-icon"></i>
                                 <div class="card-label">Pedriátrico</div>
                             </div>
@@ -308,10 +336,8 @@
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Coprológico</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general
-                                        de orina</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta
-                                        pediátrica</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general de orina</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta pediátrica</li>
                                 </ul>
                             </div>
                         </div>
@@ -322,16 +348,14 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Femenino.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Femenino.webp') top/cover no-repeat;">
                                 <i class="bi bi-gender-female card-icon"></i>
                                 <div class="card-label">Femenino</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Femenino</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal
-                                        (Estradiol, FSH, LH, progesterona, prolactina, testosterona)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil hormonal</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Papanicolau</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ginecología</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Eco de mama</li>
@@ -345,39 +369,33 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Masculino.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Masculino.webp') top/cover no-repeat;">
                                 <i class="bi bi-gender-male card-icon"></i>
                                 <div class="card-label">Masculino</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Masculino</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general
-                                        (Glucosa, colesterol, triglicéridos, biometría, examen general de orina)</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Antígeno
-                                        prostático</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ultrasonido
-                                        prostático</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Revisión general
-                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Antígeno prostático</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ultrasonido prostático</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Revisión general</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- 8. Antidoping 3 elementos -->
+                <!-- 8. Antidoping 3 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Doping 3 (1).webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/Doping 3 (1).webp') top/cover no-repeat;">
                                 <i class="bi bi-shield-check card-icon"></i>
                                 <div class="card-label">Antidoping — 3 elementos</div>
                             </div>
                             <div class="flip-card-back">
-                                <h4>Antidoping <span class="text-primary-custom">3 elementos</span></h4>
+                                <h4>Antidoping 3</h4>
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Cocaína</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Marihuana</li>
@@ -388,31 +406,130 @@
                     </div>
                 </div>
 
-                <!-- 9. Antidoping 5 elementos -->
+                <!-- 9. Antidoping 5 -->
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front"
-                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/doping-5.webp') top/cover no-repeat;">
+                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/350x265/doping-5.webp') top/cover no-repeat;">
                                 <i class="bi bi-shield-fill-check card-icon"></i>
                                 <div class="card-label">Antidoping — 5 elementos</div>
                             </div>
                             <div class="flip-card-back">
-                                <h4>Antidoping <span class="text-primary-custom">5 elementos</span></h4>
+                                <h4>Antidoping 5</h4>
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Cocaína</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Marihuana</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Anfetaminas</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Benzodiacepinas
-                                    </li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Barbitúricos
-                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Benzodiacepinas</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Barbitúricos</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Sección Sucursales -->
+    <section id="sucursales" class="py-5 bg-white">
+        <div class="container py-md-5">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Ubicaciones</h2>
+                <div class="mx-auto mt-3"
+                    style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
+            </div>
+            <div class="row g-4 align-items-center">
+                <!-- Columna Izquierda: Mapa -->
+                <div class="col-lg-7">
+                    <div class="rounded-4 overflow-hidden shadow-sm" style="height: 450px;">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115200.0!2d-100.3!3d25.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDQyJzAwLjAiTiAxMDDCsDE4JzAwLjAiVw!5e0!3m2!1ses-419!2smx!4v1700000000000!5m2!1ses-419!2smx" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                <!-- Columna Derecha: Tarjeta Unificada -->
+                <div class="col-lg-5">
+                    <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="bg-primary-custom p-4 text-white text-center">
+                            <h3 class="h4 fw-bold mb-0 text-white">Nuestras Sucursales</h3>
+                        </div>
+                        <div class="card-body p-4">
+                            <!-- Sucursal 1 -->
+                            <div class="mb-4 pb-4 border-bottom">
+                                <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Matriz</h4>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
+                                    <p class="mb-0 small">Av. Principal #123, Col. Centro, Monterrey, N.L.</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
+                                    <p class="mb-0 small">(123) 456-7890</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bi bi-clock-fill text-secondary-custom me-2"></i>
+                                    <p class="mb-0 small">Lun - Sáb: 7:00 AM - 7:00 PM</p>
+                                </div>
+                            </div>
+                            <!-- Sucursal 2 -->
+                            <div class="mb-0">
+                                <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Norte</h4>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
+                                    <p class="mb-0 small">Plaza Las Torres, Local 5, Escobedo, N.L.</p>
+                                </div>
+                                <div class="d-flex mb-2">
+                                    <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
+                                    <p class="mb-0 small">(123) 987-6543</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bi bi-clock-fill text-secondary-custom me-2"></i>
+                                    <p class="mb-0 small">Lun - Sáb: 8:00 AM - 6:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="formulario" class="py-5 bg-accent-custom">
+        <div class="container py-md-5">
+            <div class="text-center mb-5">
+                <h2 class="display-6 fw-bold">Contacto</h2>
+                <div class="mx-auto mt-3"
+                    style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
+            </div>
+            <div class="row justify-content-center text-center">
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-whatsapp display-5 text-success mb-3"></i>
+                        <h4 class="fw-bold">WhatsApp</h4>
+                        <p class="text-muted">Atención inmediata para tus citas.</p>
+                        <a href="https://wa.me/" class="btn btn-success rounded-pill px-4">Contactar ahora</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-envelope-at display-5 text-primary-custom mb-3"></i>
+                        <h4 class="fw-bold">Correo Electrónico</h4>
+                        <p class="text-muted">Escríbenos para dudas o presupuestos.</p>
+                        <p class="fw-semibold text-primary-custom">contacto@inmedik.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4">
+                        <i class="bi bi-telephone display-5 text-secondary-custom mb-3"></i>
+                        <h4 class="fw-bold">Teléfono</h4>
+                        <p class="text-muted">Llámanos a nuestra central.</p>
+                        <p class="fw-semibold text-secondary-custom">(123) 456-7890</p>
+                    </div>
+                </div>
+            </div>
+        </div>
             </div>
         </div>
     </section>
