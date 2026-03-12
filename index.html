@@ -69,16 +69,16 @@
         <img src="img/hero-(2).webp" alt="Inmedi-k Hero" class="w-100 h-auto d-block">
 
         <!-- Contenido sobrepuesto (Alineado al cuadro morado de la imagen) -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start">
-            <div class="container-fluid" style="padding-left: 8%; padding-top: 14vw;">
-                <div class="row">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start overflow-hidden">
+            <div class="container-fluid" style="padding-left: 8%; padding-right: 8%; padding-top: 14vw;">
+                <div class="row g-0">
                     <!-- Alineación precisa con el inicio del cuadro morado -->
                     <div class="col-lg-6 col-md-8 text-white text-start">
                         <div class="hero-item-title" style="margin-bottom: 2vw;">
                             <h1 class="fw-extrabold text-white ls-tight"
                                 style="font-size: clamp(1.8rem, 4.2vw, 4.5rem); line-height: 1.1; margin: 0;">
                                 Laboratorio <br>
-                                de Análisis Clínicos
+                                de Análisis <br class="d-block d-md-none"> Clínicos
                             </h1>
                         </div>
                         <div class="hero-item-subtitle" style="margin-bottom: 12vw;">
@@ -88,7 +88,7 @@
                                 <strong>a precios accesibles</strong>
                             </p>
                         </div>
-                        <div class="hero-item-cta">
+                        <div class="hero-item-cta d-none d-sm-block">
                             <a href="#formulario" class="btn btn-white-custom shadow px-4">Agendar ahora</a>
                         </div>
                     </div>
@@ -97,8 +97,81 @@
         </div>
     </header>
 
+    <!-- CTA Móvil (Solo visible en < 576px) -->
+    <div class="d-block d-sm-none text-center py-4 bg-white">
+        <div class="container">
+            <a href="#formulario" class="btn btn-primary-custom btn-lg shadow w-100" style="font-size: 1.2rem; padding: 1rem;">Agendar ahora</a>
+        </div>
+    </div>
+
     <style>
         /* Ajustes finos para el texto sobre el cuadro morado */
+        @media (max-width: 767px) {
+            .hero-section .container-fluid {
+                padding-top: 25vw !important;
+                /* Más espacio arriba en móvil para no tapar caras */
+            }
+
+            .hero-item-title h1 {
+                font-size: 8vw !important;
+                /* Texto más grande en proporción a la pantalla pequeña */
+            }
+
+            .hero-item-subtitle p {
+                font-size: 4.5vw !important;
+            }
+
+            .hero-item-subtitle {
+                margin-bottom: 15vw !important;
+            }
+
+            .btn-white-custom {
+                font-size: 4vw !important;
+                padding: 3vw 8vw !important;
+                border-radius: 4vw !important;
+            }
+        }
+
+        /* Ajuste para pantallas extra pequeñas */
+        @media (max-width: 480px) {
+            .hero-section .container-fluid {
+                padding-top: 20vw !important;
+            }
+
+            .hero-item-title h1 {
+                font-size: 9vw !important;
+                margin-bottom: 5px !important;
+            }
+            
+            .hero-item-subtitle p {
+                font-size: 4vw !important;
+            }
+            
+            .hero-item-subtitle {
+                margin-bottom: 5vw !important;
+            }
+        }
+        
+        /* Ajuste extremo para < 425px */
+        @media (max-width: 425px) {
+            .hero-section .container-fluid {
+                padding-top: 18vw !important; /* Ajuste para centrar el bloque en el cuadro morado */
+                padding-left: 5% !important; 
+            }
+            .hero-item-title h1 {
+                font-size: 5.5vw !important; /* Reducción para que no toque a la persona */
+                line-height: 1.05 !important;
+                margin-bottom: 2px !important;
+            }
+            .hero-item-subtitle p {
+                font-size: 3.2vw !important;
+            }
+            .hero-item-subtitle {
+                margin-bottom: 4vw !important;
+            }
+            /* El botón original permanece oculto */
+        }
+
     </style>
 
     <!-- Sección Servicios -->
@@ -348,7 +421,7 @@
             style="background-color: rgba(76, 21, 122, 0.50); z-index: 1;"></div>
         <div class="container py-4 position-relative" style="z-index: 2;">
             <h2 class="fw-bold mb-4 text-white" style="font-size: clamp(1.1rem, 4vw, 2.2rem); white-space: nowrap;">
-                Obtén la claridad que necesitas con nuestros paquetes de laboratorio.</h2>
+                Obtén la claridad que necesitas con nuestros paquetes de laboratorio</h2>
             <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow-lg mt-2 px-5">Cotizar
                 estudios</a>
         </div>
