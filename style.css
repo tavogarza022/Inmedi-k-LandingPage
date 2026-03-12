@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .flip-card-front .card-label {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--secondary-color);
   color: #fff;
   width: 100%;
   padding: 1rem 0.75rem;
