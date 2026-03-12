@@ -155,13 +155,16 @@
         /* Ajuste extremo para < 425px */
         @media (max-width: 425px) {
             .hero-section .container-fluid {
-                padding-top: 18vw !important; /* Ajuste para centrar el bloque en el cuadro morado */
-                padding-left: 5% !important; 
+                padding-top: 14vw !important; /* Opción A: Subimos un poco para alejarlo del borde inferior curvo */
+                padding-left: 10% !important; /* Opción A: Más aire a la izquierda */
+            }
+            .hero-item-title {
+                margin-bottom: 12vw !important; /* Espacio extra entre Título y Subtítulo */
             }
             .hero-item-title h1 {
-                font-size: 5.5vw !important; /* Reducción para que no toque a la persona */
+                font-size: 5.5vw !important;
                 line-height: 1.05 !important;
-                margin-bottom: 2px !important;
+                margin: 0 !important;
             }
             .hero-item-subtitle p {
                 font-size: 3.2vw !important;
