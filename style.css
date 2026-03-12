@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Tipografía de utilidad (Grosor variable según brief) */
 .fw-semibold { font-weight: 600 !important; }
+.fw-extrabold { font-weight: 800 !important; }
+.ls-tight { letter-spacing: -0.03em; }
 
 /* ==========================================================================
    Utilidades de Color
@@ -55,6 +57,29 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #6b1db3;
   color: #fff;
   box-shadow: 0 4px 6px rgba(129, 37, 208, 0.3);
+}
+
+.btn-white-custom {
+  background-color: #fff;
+  border-color: #fff;
+  color: var(--secondary-color);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: clamp(1rem, 2.2vw, 2.5rem);
+  padding: 1vw 4vw;
+  border-radius: clamp(12px, 1.2vw, 20px) !important;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.btn-white-custom:hover, 
+.btn-white-custom:focus {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--secondary-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .btn-secondary-custom {
@@ -87,7 +112,6 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
   position: relative;
-  min-height: 85vh; /* Amplio espacio blanco general / clínico */
   display: flex;
   align-items: center;
   /* El background URL se ajusta por HTML o en una clase específica posterior */

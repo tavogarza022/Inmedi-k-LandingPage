@@ -69,22 +69,27 @@
         <img src="img/hero-(2).webp" alt="Inmedi-k Hero" class="w-100 h-auto d-block">
 
         <!-- Contenido sobrepuesto (Alineado al cuadro morado de la imagen) -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
-            <div class="container-fluid" style="padding-left: 8%;">
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-start">
+            <div class="container-fluid" style="padding-left: 8%; padding-top: 14vw;">
                 <div class="row">
                     <!-- Alineación precisa con el inicio del cuadro morado -->
                     <div class="col-lg-6 col-md-8 text-white text-start">
-                        <div class="hero-text-box py-3 py-lg-5">
-                            <h1 class="fw-bold mb-4 text-white" style="font-size: 4.5rem; line-height: 1.1;">
-                                <strong>Laboratorio</strong> <br>
-                                <strong>de Análisis Clínicos</strong> <br><br>
-                                <span class="text-white fw-normal" style="font-size: 2.2rem;">Resultados en <strong>24
-                                        horas</strong> <br>
-                                    <strong>a precios accesibles</strong></span>
+                        <div class="hero-item-title" style="margin-bottom: 2vw;">
+                            <h1 class="fw-extrabold text-white ls-tight"
+                                style="font-size: clamp(1.8rem, 4.2vw, 4.5rem); line-height: 1.1; margin: 0;">
+                                Laboratorio <br>
+                                de Análisis Clínicos
                             </h1>
-                            <br><br>
-                            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow px-5">Agendar
-                                ahora</a>
+                        </div>
+                        <div class="hero-item-subtitle" style="margin-bottom: 12vw;">
+                            <p class="text-white"
+                                style="font-size: clamp(1rem, 2.2vw, 2.5rem); line-height: 1.2; font-weight: 400; margin: 0;">
+                                Resultados en <strong>24 horas</strong> <br>
+                                <strong>a precios accesibles</strong>
+                            </p>
+                        </div>
+                        <div class="hero-item-cta">
+                            <a href="#formulario" class="btn btn-white-custom shadow px-4">Agendar ahora</a>
                         </div>
                     </div>
                 </div>
@@ -94,25 +99,6 @@
 
     <style>
         /* Ajustes finos para el texto sobre el cuadro morado */
-        @media (max-width: 767px) {
-            .hero-section {
-                /* En mobile, si la imagen es muy horizontal, el texto puede ser muy pequeño. 
-                   Podemos optar por un fondo sólido o mantenerlo si la imagen escala bien. */
-                display: block;
-            }
-
-            .hero-section .position-absolute {
-                position: relative !important;
-                background-color: var(--secondary-color);
-                width: 100% !important;
-                height: auto !important;
-                padding: 2rem 0;
-            }
-
-            .hero-section img {
-                width: 100%;
-            }
-        }
     </style>
 
     <!-- Sección Servicios -->
@@ -361,16 +347,17 @@
         <div class="position-absolute top-0 start-0 w-100 h-100"
             style="background-color: rgba(76, 21, 122, 0.50); z-index: 1;"></div>
         <div class="container py-4 position-relative" style="z-index: 2;">
-            <h2 class="fw-bold mb-4 text-white" style="font-size: clamp(1.1rem, 4vw, 2.2rem); white-space: nowrap;">Obtén la claridad que necesitas con nuestros paquetes de laboratorio.</h2>
-            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow-lg mt-2 px-5">Cotizar estudios</a>
+            <h2 class="fw-bold mb-4 text-white" style="font-size: clamp(1.1rem, 4vw, 2.2rem); white-space: nowrap;">
+                Obtén la claridad que necesitas con nuestros paquetes de laboratorio.</h2>
+            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow-lg mt-2 px-5">Cotizar
+                estudios</a>
         </div>
     </section>
 
 
 
     <!-- Footer -->
-    <footer class="bg-white text-dark py-4 mt-auto border-top"
-        style="border-color: rgba(0,0,0,0.05) !important;">
+    <footer class="bg-white text-dark py-4 mt-auto border-top" style="border-color: rgba(0,0,0,0.05) !important;">
         <div class="container text-center">
             <div class="mb-3">
                 <span style="color: var(--secondary-color); font-size: 1.25rem; font-weight: bold;">Inmedi-k</span>
