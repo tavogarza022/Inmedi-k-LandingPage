@@ -102,8 +102,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const flipCards = document.querySelectorAll('.flip-card');
     flipCards.forEach(card => {
         card.addEventListener('click', function() {
-            // Alternar la clase 'flipped' para activar el CSS de rotación
-            this.classList.toggle('flipped');
+            // Solo activar el toggle de 'flipped' en resoluciones menores a 992px (Mobile/Tablet)
+            // Esto evita que en escritorio las tarjetas se "queden volteadas" al hacer clic
+            if (window.innerWidth < 992) {
+                this.classList.toggle('flipped');
+            }
         });
     });
 });
