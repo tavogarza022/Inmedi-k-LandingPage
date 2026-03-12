@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-M5LB29MB');</script>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M5LB29MB');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmedi-k | Laboratorio de Análisis Clínicos</title>
-    
+
     <!-- Google Fonts: Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap 5 CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Bootstrap Icons (Optional but recommended for UI) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Custom CSS -->
     <link href="style.css" rel="stylesheet">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5LB29MB"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M5LB29MB" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Navbar -->
@@ -39,11 +44,13 @@
             <a class="navbar-brand" href="#">
                 <img src="img/inmedikgris (1).png" alt="Inmedi-k Logo" style="max-height: 45px;">
             </a>
-            
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
@@ -56,32 +63,65 @@
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
-    <header class="hero-section" style="background: url('img/Hero.webp') center/cover no-repeat;">
-        <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(76, 21, 122, 0.85); z-index: 1;"></div>
-        <div class="container hero-content py-5">
-            <div class="row min-vh-75 align-items-center">
-                <div class="col-lg-8 col-xl-7 text-white text-center text-lg-start">
-                    <h1 class="display-4 fw-bold mb-4" style="color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">
-                        Laboratorio de análisis clínicos: <br>
-                        <span class="text-primary-custom">resultados en 24 horas a precios accesibles</span>
-                    </h1>
-                    <p class="lead mb-5 fs-4" style="opacity: 0.9;">
-                        Desde perfiles generales hasta estudios especializados, cuidamos tu salud con la más alta tecnología.
-                    </p>
-                    <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow px-5">Agendar ahora</a>
+    <header class="hero-section position-relative w-100 overflow-hidden" style="background-color: #f8f9fa;">
+        <!-- Imagen completa sin cortes -->
+        <img src="img/hero-(2).webp" alt="Inmedi-k Hero" class="w-100 h-auto d-block">
+
+        <!-- Contenido sobrepuesto (Alineado al cuadro morado de la imagen) -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center">
+            <div class="container-fluid" style="padding-left: 8%;">
+                <div class="row">
+                    <!-- Alineación precisa con el inicio del cuadro morado -->
+                    <div class="col-lg-6 col-md-8 text-white text-start">
+                        <div class="hero-text-box py-3 py-lg-5">
+                            <h1 class="fw-bold mb-4 text-white" style="font-size: 4.5rem; line-height: 1.1;">
+                                <strong>Laboratorio</strong> <br>
+                                <strong>de Análisis Clínicos</strong> <br><br>
+                                <span class="text-white fw-normal" style="font-size: 2.2rem;">Resultados en <strong>24
+                                        horas</strong> <br>
+                                    <strong>a precios accesibles</strong></span>
+                            </h1>
+                            <br><br>
+                            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow px-5">Agendar
+                                ahora</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+
+    <style>
+        /* Ajustes finos para el texto sobre el cuadro morado */
+        @media (max-width: 767px) {
+            .hero-section {
+                /* En mobile, si la imagen es muy horizontal, el texto puede ser muy pequeño. 
+                   Podemos optar por un fondo sólido o mantenerlo si la imagen escala bien. */
+                display: block;
+            }
+
+            .hero-section .position-absolute {
+                position: relative !important;
+                background-color: var(--secondary-color);
+                width: 100% !important;
+                height: auto !important;
+                padding: 2rem 0;
+            }
+
+            .hero-section img {
+                width: 100%;
+            }
+        }
+    </style>
 
     <!-- Sección Servicios -->
     <section id="servicios" class="py-5 bg-accent-custom">
         <div class="container py-md-5">
             <div class="text-center mb-5">
                 <h2 class="display-6 fw-bold">Estudios con alta precisión médica</h2>
-                <div class="mx-auto mt-3" style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
+                <div class="mx-auto mt-3"
+                    style="height: 4px; width: 80px; background-color: var(--primary-color); border-radius: 2px;"></div>
             </div>
 
             <!-- Grilla 3 Columnas Bootstrap - Flip Cards -->
@@ -91,8 +131,9 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/General.webp') center/cover no-repeat;">
-                                <i class="bi bi-person-heart card-icon"></i>
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/General.webp') center/cover no-repeat;">
+                                <i class="bi bi-clipboard2-pulse card-icon"></i>
                                 <div class="card-label">General</div>
                             </div>
                             <div class="flip-card-back">
@@ -100,10 +141,14 @@
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Glucosa</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Colesterol</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría Hemática</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general de orina</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta de revisión</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría
+                                        Hemática</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general
+                                        de orina</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta de
+                                        revisión</li>
                                 </ul>
                             </div>
                         </div>
@@ -114,17 +159,20 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Adulto.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Adulto.webp') center/cover no-repeat;">
                                 <i class="bi bi-person-fill card-icon"></i>
                                 <div class="card-label">Adulto</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Adulto</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general (Glucosa, colesterol, triglicéridos, biometría, EGO)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general
+                                        (Glucosa, colesterol, triglicéridos, biometría, EGO)</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Creatinina</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Urea</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta general</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta general
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -135,7 +183,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Cardio.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Cardio.webp') center/cover no-repeat;">
                                 <i class="bi bi-heart-pulse card-icon"></i>
                                 <div class="card-label">Cardiaco</div>
                             </div>
@@ -143,10 +192,15 @@
                                 <h4>Cardiaco</h4>
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Colesterol</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Rayos X de tórax</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Electrocardiograma</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Medicina interna</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Triglicéridos
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Rayos X de tórax
+                                    </li>
+                                    <li><i
+                                            class="bi bi-check-circle-fill text-primary-custom me-2"></i>Electrocardiograma
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Medicina interna
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -157,17 +211,21 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Embarazo.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Embarazo.webp') center/cover no-repeat;">
                                 <i class="bi bi-boxes card-icon"></i>
                                 <div class="card-label">Embarazo</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Embarazo</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal (biometría, examen general de orina, glucosa, VDRL grupo y RH)</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Química Sanguínea</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal
+                                        (biometría, examen general de orina, glucosa, VDRL grupo y RH)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Química
+                                        Sanguínea</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>VIH</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta ginecológica</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta
+                                        ginecológica</li>
                                 </ul>
                             </div>
                         </div>
@@ -178,7 +236,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Pediatria.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Pediatria.webp') center/cover no-repeat;">
                                 <i class="bi bi-emoji-smile card-icon"></i>
                                 <div class="card-label">Pedriátrico</div>
                             </div>
@@ -187,8 +246,10 @@
                                 <ul>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Biometría</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Coprológico</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general de orina</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta pediátrica</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Examen general
+                                        de orina</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Consulta
+                                        pediátrica</li>
                                 </ul>
                             </div>
                         </div>
@@ -199,14 +260,16 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Femenino.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Femenino.webp') center/cover no-repeat;">
                                 <i class="bi bi-gender-female card-icon"></i>
                                 <div class="card-label">Femenino</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Femenino</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal (Estradiol, FSH, LH, progesterona, prolactina, testosterona)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Perfil prenatal
+                                        (Estradiol, FSH, LH, progesterona, prolactina, testosterona)</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Papanicolau</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ginecología</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Eco de mama</li>
@@ -220,17 +283,22 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Masculino.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Masculino.webp') center/cover no-repeat;">
                                 <i class="bi bi-gender-male card-icon"></i>
                                 <div class="card-label">Masculino</div>
                             </div>
                             <div class="flip-card-back">
                                 <h4>Masculino</h4>
                                 <ul>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general (Glucosa, colesterol, triglicéridos, biometría, examen general de orina)</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Antígeno prostático</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ultrasonido prostático</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Revisión general</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Check up general
+                                        (Glucosa, colesterol, triglicéridos, biometría, examen general de orina)</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Antígeno
+                                        prostático</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Ultrasonido
+                                        prostático</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Revisión general
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -241,7 +309,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Doping 3.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Doping 3.webp') center/cover no-repeat;">
                                 <i class="bi bi-shield-check card-icon"></i>
                                 <div class="card-label">Antidoping — 3 elementos</div>
                             </div>
@@ -261,7 +330,8 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="flip-card">
                         <div class="flip-card-inner">
-                            <div class="flip-card-front" style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Doping 5.webp') center/cover no-repeat;">
+                            <div class="flip-card-front"
+                                style="background: linear-gradient(rgba(129, 37, 208, 0.4), rgba(129, 37, 208, 0.4)), url('img/Doping 5.webp') center/cover no-repeat;">
                                 <i class="bi bi-shield-fill-check card-icon"></i>
                                 <div class="card-label">Antidoping — 5 elementos</div>
                             </div>
@@ -271,8 +341,10 @@
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Cocaína</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Marihuana</li>
                                     <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Anfetaminas</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Benzodiacepinas</li>
-                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Barbitúricos</li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Benzodiacepinas
+                                    </li>
+                                    <li><i class="bi bi-check-circle-fill text-primary-custom me-2"></i>Barbitúricos
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -284,34 +356,41 @@
     </section>
 
     <!-- Banner CTA Intermedio -->
-    <section class="py-5 text-white text-center position-relative" style="background: url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;">
-        <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(76, 21, 122, 0.90); z-index: 1;"></div>
+    <section class="py-5 text-white text-center position-relative"
+        style="background: url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?auto=format&fit=crop&q=80&w=2000') center/cover no-repeat;">
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(76, 21, 122, 0.90); z-index: 1;"></div>
         <div class="container py-4 position-relative" style="z-index: 2;">
-            <h2 class="display-6 fw-bold mb-4 text-white">Obtén la claridad que necesitas con nuestros paquetes de laboratorio.</h2>
-            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow-lg mt-2 px-5">Cotizar estudios</a>
+            <h2 class="display-6 fw-bold mb-4 text-white">Obtén la claridad que necesitas con nuestros paquetes de
+                laboratorio.</h2>
+            <a href="#formulario" class="btn btn-primary-custom btn-lg rounded-pill shadow-lg mt-2 px-5">Cotizar
+                estudios</a>
         </div>
     </section>
 
 
 
     <!-- Footer -->
-    <footer class="bg-secondary-custom text-white py-4 mt-auto border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+    <footer class="bg-white text-dark py-4 mt-auto border-top"
+        style="border-color: rgba(0,0,0,0.05) !important;">
         <div class="container text-center">
             <div class="mb-3">
-                <span style="color: var(--primary-color); font-size: 1.25rem; font-weight: bold;">Inmedi-k</span>
+                <span style="color: var(--secondary-color); font-size: 1.25rem; font-weight: bold;">Inmedi-k</span>
             </div>
-            <p class="mb-2 text-white-50 small">&copy; <span id="currentYear"></span> Inmedi-k Laboratorio Clínico. Todos los derechos reservados.</p>
-            <p class="mb-0 small" style="opacity: 0.7;">
-                <a href="#" class="text-white text-decoration-none me-2">LEGAL</a> | 
+            <p class="mb-2 text-muted small">&copy; <span id="currentYear"></span> Inmedi-k Laboratorio Clínico.
+                Todos los derechos reservados.</p>
+            <p class="mb-0 small text-muted">
+                <a href="#" class="text-dark text-decoration-none me-2 fw-medium">LEGAL</a> |
                 <span class="ms-2">Diseño y desarrollo por la agencia de marketing digital Futurité.</span>
             </p>
         </div>
     </footer>
 
-    
+
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
+
 </html>
