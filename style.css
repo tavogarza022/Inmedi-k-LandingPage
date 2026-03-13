@@ -257,3 +257,34 @@ h1, h2, h3, h4, h5, h6 {
     height: 350px; /* Un poco más alta en mobile para listas largas */
   }
 }
+
+/* ==========================================================================
+   Sucursales Interactivas
+   ========================================================================== */
+.branch-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1.5rem;
+  margin: -1rem -1rem 1rem -1rem; /* Ajuste para hover padding */
+  border-radius: 12px;
+}
+
+.branch-item:hover {
+  background-color: var(--accent-color);
+  transform: translateX(5px);
+}
+
+.branch-item.active {
+  background-color: #f0e6ff; /* Morado muy claro para resaltar */
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 4px 12px rgba(129, 37, 208, 0.1);
+}
+
+.branch-item h4 {
+  transition: color 0.3s ease;
+}
+
+.branch-item:hover h4, 
+.branch-item.active h4 {
+  color: var(--secondary-color) !important;
+}
