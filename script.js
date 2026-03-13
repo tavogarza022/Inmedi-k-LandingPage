@@ -44,6 +44,11 @@ document.addEventListener('DOMContentLoaded', () => {
     flipCards.forEach(card => {
         card.addEventListener('click', function() {
             if (window.innerWidth < 992) {
+                // If the clicked card is not already flipped, close all other flipped cards
+                if (!this.classList.contains('flipped')) {
+                    flipCards.forEach(c => c.classList.remove('flipped'));
+                }
+                // Toggle the current card
                 this.classList.toggle('flipped');
             }
         });
