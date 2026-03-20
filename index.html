@@ -96,7 +96,7 @@
                         <div class="hero-item-subtitle" style="margin-bottom: 12vw;">
                             <p class="text-white"
                                 style="font-size: clamp(1rem, 2.2vw, 2.5rem); line-height: 1.2; font-weight: 400; margin: 0;">
-                                Resultados en <strong>24 horas</strong> <br>
+                                Resultados <strong>el mismo día</strong> <br>
                                 <strong>a precios accesibles</strong>
                             </p>
                         </div>
@@ -165,8 +165,8 @@
             }
         }
 
-        /* Ajuste extremo para < 425px */
-        @media (max-width: 425px) {
+        /* Ajuste extremo para < 430px */
+        @media (max-width: 430px) {
             .hero-section .container-fluid {
                 padding-top: 14vw !important;
                 /* Opción A: Subimos un poco para alejarlo del borde inferior curvo */
@@ -208,7 +208,7 @@
                     <div
                         class="p-4 rounded-4 shadow-sm h-100 bg-accent-custom border-bottom border-primary-custom border-4">
                         <i class="bi bi-clock display-4 text-primary-custom mb-3"></i>
-                        <h3 class="h5 fw-bold">Resultados en 24h</h3>
+                        <h3 class="h5 fw-bold">Resultados el mismo día</h3>
                         <p class="small text-muted mb-0">Sabemos que tu salud no puede esperar. Entrega rápida y
                             precisa.</p>
                     </div>
@@ -494,10 +494,10 @@
                 <div class="col-lg-7">
                     <div class="rounded-4 overflow-hidden shadow-sm position-relative" style="height: 450px;">
                         <!-- Overlay para móviles <= 425px (Redirige a Google Maps) -->
-                        <a href="https://www.google.com.mx/maps/search/Inmedi-k/" target="_blank" class="mobile-map-overlay"></a>
-                        
-                        <iframe
-                            id="map-iframe"
+                        <a href="https://www.google.com.mx/maps/search/Inmedi-k/" target="_blank"
+                            class="mobile-map-overlay"></a>
+
+                        <iframe id="map-iframe"
                             src="https://maps.google.com/maps?q=Av. Monterrey 100, Col. Vida, 66064 Escobedo, N.L.&output=embed"
                             width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade">
@@ -514,8 +514,10 @@
                             <!-- Contenedor con Scroll -->
                             <div class="sucursales-list p-4" style="max-height: 400px; overflow-y: auto;">
                                 <!-- 0. Santa Martha (Matriz) -->
-                                <div class="branch-item mb-4 pb-4 border-bottom active" data-location="Av. Monterrey 100, Col. Vida, 66064 Escobedo, N.L.">
-                                    <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Santa Martha <span class="text-secondary-custom fw-normal">(Matriz)</span></h4>
+                                <div class="branch-item mb-4 pb-4 border-bottom active"
+                                    data-location="Av. Monterrey 100, Col. Vida, 66064 Escobedo, N.L.">
+                                    <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Santa Martha <span
+                                            class="text-secondary-custom fw-normal">(Matriz)</span></h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
                                         <p class="mb-0 small">Av. Monterrey #100, Col. Vida, Escobedo, N.L.</p>
@@ -530,11 +532,13 @@
                                     </div>
                                 </div>
                                 <!-- 1. Aztlán -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Av. Aztlán 7200, Col. Valle de Santa Lucía, Monterrey, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Av. Aztlán 7200, Col. Valle de Santa Lucía, Monterrey, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Aztlán</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Aztlán #7200, Col. Valle de Santa Lucía, Monterrey, N.L.</p>
+                                        <p class="mb-0 small">Av. Aztlán #7200, Col. Valle de Santa Lucía, Monterrey,
+                                            N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -546,11 +550,13 @@
                                     </div>
                                 </div>
                                 <!-- 2. Puerta de Hierro -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Fracc. Puerta de Hierro 526, Col. Colonial Cumbres, Monterrey, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Fracc. Puerta de Hierro 526, Col. Colonial Cumbres, Monterrey, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Puerta de Hierro</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Fracc. Puerta de Hierro #526, Col. Colonial Cumbres, Monterrey, N.L.</p>
+                                        <p class="mb-0 small">Fracc. Puerta de Hierro #526, Col. Colonial Cumbres,
+                                            Monterrey, N.L.</p>
                                     </div>
                                     <div class="d-flex">
                                         <i class="bi bi-clock-fill text-secondary-custom me-2"></i>
@@ -558,11 +564,13 @@
                                     </div>
                                 </div>
                                 <!-- 3. Acueducto -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Acueducto Palma 340, Col. Girasoles 4to Sector, Escobedo, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Acueducto Palma 340, Col. Girasoles 4to Sector, Escobedo, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Acueducto</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Acueducto Palma #340, Col. Girasoles 4to Sector, Escobedo, N.L.</p>
+                                        <p class="mb-0 small">Acueducto Palma #340, Col. Girasoles 4to Sector, Escobedo,
+                                            N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -574,7 +582,8 @@
                                     </div>
                                 </div>
                                 <!-- 4. Apodaca -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Morelos 201, Col. Apodaca Centro, Apodaca, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Morelos 201, Col. Apodaca Centro, Apodaca, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Apodaca</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
@@ -590,11 +599,13 @@
                                     </div>
                                 </div>
                                 <!-- 5. Capellanía -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Av. Hacienda del Sol 503, Col. Héroes de Capellanía, García, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Av. Hacienda del Sol 503, Col. Héroes de Capellanía, García, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Capellanía</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Hacienda del Sol #503, Col. Héroes de Capellanía, García, N.L.</p>
+                                        <p class="mb-0 small">Av. Hacienda del Sol #503, Col. Héroes de Capellanía,
+                                            García, N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -606,11 +617,13 @@
                                     </div>
                                 </div>
                                 <!-- 6. Guadalupe -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Carretera Reynosa 403, Col. Tres Caminos, Guadalupe, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Carretera Reynosa 403, Col. Tres Caminos, Guadalupe, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Guadalupe</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Carretera Reynosa #403, Col. Tres Caminos, Guadalupe, N.L.</p>
+                                        <p class="mb-0 small">Carretera Reynosa #403, Col. Tres Caminos, Guadalupe, N.L.
+                                        </p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -622,7 +635,8 @@
                                     </div>
                                 </div>
                                 <!-- 7. Juárez -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Colonia Centro Benito Juárez 401, Juárez, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Colonia Centro Benito Juárez 401, Juárez, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Juárez</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
@@ -638,11 +652,13 @@
                                     </div>
                                 </div>
                                 <!-- 8. Lincoln -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Av. Lincoln 601, Col. Villas del Poniente, García, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Av. Lincoln 601, Col. Villas del Poniente, García, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Lincoln</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Lincoln #601, Col. Villas del Poniente, García, N.L.</p>
+                                        <p class="mb-0 small">Av. Lincoln #601, Col. Villas del Poniente, García, N.L.
+                                        </p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -654,11 +670,13 @@
                                     </div>
                                 </div>
                                 <!-- 9. San Pedro 400 -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Av. Manuel J. Clouthier 307, Col. San Pedro 400, San Pedro Garza García, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Av. Manuel J. Clouthier 307, Col. San Pedro 400, San Pedro Garza García, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal San Pedro 400</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Manuel J. Clouthier No. 307, Col. San Pedro 400, San Pedro Garza García, N.L.</p>
+                                        <p class="mb-0 small">Av. Manuel J. Clouthier No. 307, Col. San Pedro 400, San
+                                            Pedro Garza García, N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -670,11 +688,13 @@
                                     </div>
                                 </div>
                                 <!-- 10. Santa Catarina -->
-                                <div class="branch-item mb-4 pb-4 border-bottom" data-location="Av. Manuel Ordoñez 113, Col. Cd. Santa Catarina Centro, Santa Catarina, N.L.">
+                                <div class="branch-item mb-4 pb-4 border-bottom"
+                                    data-location="Av. Manuel Ordoñez 113, Col. Cd. Santa Catarina Centro, Santa Catarina, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal Santa Catarina</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Manuel Ordoñez No. 113, Col. Cd. Santa Catarina Centro, Santa Catarina, N.L.</p>
+                                        <p class="mb-0 small">Av. Manuel Ordoñez No. 113, Col. Cd. Santa Catarina
+                                            Centro, Santa Catarina, N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -686,11 +706,13 @@
                                     </div>
                                 </div>
                                 <!-- 11. San Nicolás -->
-                                <div class="branch-item mb-0" data-location="Av. Arturo B. De la Garza 478, Col. Villareal, San Nicolás de los Garza, N.L.">
+                                <div class="branch-item mb-0"
+                                    data-location="Av. Arturo B. De la Garza 478, Col. Villareal, San Nicolás de los Garza, N.L.">
                                     <h4 class="h5 fw-bold text-primary-custom mb-3">Sucursal San Nicolás</h4>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-geo-alt-fill text-secondary-custom me-2 mt-1"></i>
-                                        <p class="mb-0 small">Av. Arturo B. De la Garza No. 478, Col. Villareal, San Nicolás de los Garza, N.L.</p>
+                                        <p class="mb-0 small">Av. Arturo B. De la Garza No. 478, Col. Villareal, San
+                                            Nicolás de los Garza, N.L.</p>
                                     </div>
                                     <div class="d-flex mb-2">
                                         <i class="bi bi-telephone-fill text-secondary-custom me-2"></i>
@@ -703,12 +725,12 @@
                                 </div>
                             </div>
                         </div>
-             </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
+        </div>
         </div>
     </section>
 
@@ -771,24 +793,30 @@
         <div class="container text-center">
             <!-- Brand centered at top -->
             <div class="mb-5">
-                <span style="color: var(--secondary-color); font-size: 2rem; font-weight: 800; letter-spacing: -0.5px;">Inmedi-k</span>
+                <span
+                    style="color: var(--secondary-color); font-size: 2rem; font-weight: 800; letter-spacing: -0.5px;">Inmedi-k</span>
             </div>
 
             <div class="row g-4 justify-content-center">
                 <!-- Columna 1: Contacto -->
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">CONTACTO</h5>
+                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">
+                        CONTACTO</h5>
                     <p class="mb-0 small"><i class="bi bi-telephone-fill me-2 fs-6"></i>(123) 456-7890</p>
                     <div class="d-flex justify-content-center gap-3 mt-3">
-                        <a href="https://facebook.com" class="text-secondary-custom fs-5"><i class="bi bi-facebook"></i></a>
-                        <a href="https://instagram.com" class="text-secondary-custom fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="https://facebook.com" class="text-secondary-custom fs-5"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://instagram.com" class="text-secondary-custom fs-5"><i
+                                class="bi bi-instagram"></i></a>
                         <a href="https://wa.me/" class="text-secondary-custom fs-5"><i class="bi bi-whatsapp"></i></a>
                     </div>
                 </div>
 
                 <!-- Columna 2: Dirección -->
-                <div class="col-lg-4 mb-4 mb-lg-0 border-start-lg border-end-lg" style="border-color: rgba(0,0,0,0.05) !important;">
-                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">DIRECCIÓN</h5>
+                <div class="col-lg-4 mb-4 mb-lg-0 border-start-lg border-end-lg"
+                    style="border-color: rgba(0,0,0,0.05) !important;">
+                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">
+                        DIRECCIÓN</h5>
                     <p class="small text-muted mb-2">
                         <i class="bi bi-geo-alt-fill text-secondary-custom me-1"></i>
                         <strong>Sucursal Matriz:</strong><br>
@@ -799,7 +827,8 @@
 
                 <!-- Columna 3: Responsable Sanitario -->
                 <div class="col-lg-4">
-                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">RESPONSABLE SANITARIO</h5>
+                    <h5 class="fw-bold text-primary-custom mb-3" style="font-size: 0.85rem; letter-spacing: 1px;">
+                        RESPONSABLE SANITARIO</h5>
                     <div class="small text-muted">
                         <p class="mb-2"><strong>Química Laura Berenice Márquez Castillo</strong></p>
                         <p class="mb-2"><strong>Universidad:</strong> UANL | <strong>Cédula:</strong> 13464343</p>
@@ -811,9 +840,11 @@
             <!-- Fila Inferior: Copyright y Créditos -->
             <div class="row mt-5 pt-4 border-top" style="border-color: rgba(0,0,0,0.05) !important;">
                 <div class="col-md-12">
-                    <p class="mb-2 text-muted small">&copy; <span id="currentYear"></span> Inmedi-k Laboratorio Clínico. Todos los derechos reservados.</p>
+                    <p class="mb-2 text-muted small">&copy; <span id="currentYear"></span> Inmedi-k Laboratorio Clínico.
+                        Todos los derechos reservados.</p>
                     <p class="mb-2 small text-muted">
-                        Diseño y desarrollo por <a href="https://futurite.com" class="text-secondary-custom text-decoration-none fw-bold">Futurité</a>
+                        Diseño y desarrollo por <a href="https://futurite.com"
+                            class="text-secondary-custom text-decoration-none fw-bold">Futurité</a>
                     </p>
                     <div class="mt-3 small">
                         <a href="#" class="text-muted text-decoration-none me-3 hover-primary">Aviso de Privacidad</a>
